@@ -1,0 +1,48 @@
+{
+  "OnboardingBoolFeatureFlag": [
+    {
+      "key": "isUsernameRequired",
+      "default_value": false,
+      "type": "bool",
+      "override_value": null
+    },
+    {
+      "key": "isPhoneNumberRequired",
+      "default_value": false,
+      "type": "bool",
+      "override_value": null
+    },
+    {
+      "key": "isPasswordRequired",
+      "default_value": true,
+      "type": "bool",
+      "override_value": null
+    }
+  ],
+  "AppStringFeatureFlag": [
+    {
+      "key": "welcomeMessage",
+      "default_value": "Welcome to the app \u2764\ufe0f",
+      "type": "string",
+      "override_value": null
+    },
+    {
+      "key": "searchName",
+      "default_value": "Search in header..",
+      "type": "string",
+      "override_value": null
+    },
+    {
+      "key": "apiEndpoint",
+      "default_value": "https://api.default.com",
+      "type": "string",
+      "override_value": null
+    },
+    {
+      "key": "appLink",
+      "default_value": "www.applestore.com/heysocial",
+      "type": "string",
+      "override_value": null
+    }
+  ]
+}
