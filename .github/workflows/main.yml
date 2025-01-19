@@ -1,7 +1,7 @@
 name: Update Tiny Flags
 on:
   push:
-    paths: ['**/feature_flags/**', '**/*FeatureFlag.swift']
+    # paths: ['**/feature_flags/**', '**/*FeatureFlag.swift']
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -11,7 +11,7 @@ jobs:
       # checkout current repo
       - uses: actions/checkout@v3
       # checkout tiny flags repository
-      - uses: ./.github/actions/tiny-flags #lloydoad/tiny-flagging-action@main
+      - uses: lloydoad/tiny-flagging-action@main
         with:
           # token for write access to repository storing feature flags
           token: ${{ secrets.GITHUB_TOKEN }}
