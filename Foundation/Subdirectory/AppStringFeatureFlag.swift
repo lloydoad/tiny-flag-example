@@ -5,6 +5,7 @@ enum AppStringFeatureFlag: String {
     case welcomeMessage
     case apiEndpoint
     case searchName
+    case appLink
     
     var defaultValue: String {
         switch self {
@@ -14,6 +15,8 @@ enum AppStringFeatureFlag: String {
             return "https://api.default.com"
         case .searchName:
             return "Search in header.."
+        case .appLink:
+            return "www.applestore.com/heysocial"
         }
     }
 }
