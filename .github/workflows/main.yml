@@ -11,7 +11,7 @@ jobs:
       # checkout current repo
       - uses: actions/checkout@v3
       # checkout tiny flags repository
-      - uses: lloydoad/tiny-flagging-action@main
+      - uses: ./.github/actions/tiny-flags #lloydoad/tiny-flagging-action@main
         # with:
         #   # repository for storing feature flags, defaults to reposity using this workflow
         #   flags_repo: ${{ github.repository }}
