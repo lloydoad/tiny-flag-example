@@ -1,11 +1,12 @@
-name: Update Tiny Flags
+name: Sync Feature Flags - TinyFlag
 on:
   push:
-    # paths: ['**/feature_flags/**', '**/*FeatureFlag.swift']
+    paths: ['**/generated_feature_flags/**', '**/*FeatureFlag.swift']
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
+      # Required for updating stored flags
       contents: write
     steps:
       # checkout current repo
@@ -15,5 +16,3 @@ jobs:
         with:
           # token for write access to repository storing feature flags
           token: ${{ secrets.GITHUB_TOKEN }}
-        #   # repository for storing feature flags, defaults to reposity using this workflow
-        #   flags_repo: ${{ github.repository }}
